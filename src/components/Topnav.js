@@ -1,12 +1,12 @@
+// src/components/Topnav.js
+
 import React from "react";
-import "../styles/components/Topnav.css";
+import "../styles/components/Topnav.css"; // Correct import path
 
 function Topnav() {
   return (
     <nav className="topnav">
-      <a href="#home" className="logo-link">
-        <img src="/assets/logo.png" alt="Siphome Logo" className="logo" />
-      </a>
+      <img src="/assets/logo.png" alt="Siphome Logo" className="logo" />
       <ul className="nav-links">
         <li>
           <a href="#home">Home</a>

@@ -1,3 +1,5 @@
+/* src/styles/components/Topnav.css */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 .topnav {
@@ -5,18 +7,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  font-family: "Inter", sans-serif;
-  color: #ffffff;
-}
-
-.logo-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
+  font-family: "Inter", sans-serif; /* Global font */
+  color: #ffffff; /* Default text color */
 }
 
 .logo {
-  height: 40px;
+  height: 40px; /* Adjust size as needed */
   width: auto;
 }
 
@@ -58,5 +54,5 @@
 }
 
 .topnav {
-  background: none;
+  background: none; /* No background color */
 }
