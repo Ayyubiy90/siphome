@@ -9,6 +9,12 @@
   color: #ffffff;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .logo {
   height: 40px;
   width: auto;

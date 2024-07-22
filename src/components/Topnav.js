@@ -1,9 +1,12 @@
 import React from "react";
 import "../styles/components/Topnav.css";
+
 function Topnav() {
   return (
     <nav className="topnav">
-      <img src="/assets/logo.png" alt="Siphome Logo" className="logo" />
+      <a href="#home" className="logo-link">
+        <img src="/assets/logo.png" alt="Siphome Logo" className="logo" />
+      </a>
       <ul className="nav-links">
         <li>
           <a href="#home">Home</a>
