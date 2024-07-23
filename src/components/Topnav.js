@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/components/Topnav.css";
+import logo from "../assets/logo.png";
 
 function Topnav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,7 @@ function Topnav() {
 
   return (
     <nav className={`topnav ${isOpen ? "open" : ""}`}>
-      <img src="/assets/logo.png" alt="Siphome Logo" className="logo" />
+      <img src={logo} alt="Siphome Logo" className="logo" />
       <ul className={`nav-links ${isOpen ? "hidden" : ""}`}>
         <li>
           <a href="#home">Home</a>

@@ -1,11 +1,8 @@
 import React from "react";
 import "../styles/components/Hero.css";
+import image from "../assets/image.png";
 
 function Hero() {
-  const handleClick = (event) => {
-    event.preventDefault();
-    alert("Button clicked!");
-  };
   return (
     <section className="hero">
       <div className="hero-content">
@@ -19,13 +16,16 @@ function Hero() {
           home maintenance.
         </p>
         <div className="hero-buttons">
-          <a href="#get-started" className="hero-button" onClick={handleClick}>
+          <a href="#get-started" className="hero-button">
             Get Started
           </a>
-          <a href="#learn-more" className="hero-button" onClick={handleClick}>
+          <a href="#learn-more" className="hero-button">
             Learn More
           </a>
         </div>
+      </div>
+      <div className="hero-image">
+        <img src={image} alt="Smart Home" />
       </div>
     </section>
   );
