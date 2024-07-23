@@ -66,6 +66,12 @@
   padding: 0.5rem 1rem;
 }
 
+.menu-button:hover {
+  background-color: #3acf6e;
+  color: #ffffff;
+  border-color: #3acf6e;
+}
+
 @media (max-width: 768px) {
   .nav-links,
   .auth-links {
