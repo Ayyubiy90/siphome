@@ -18,7 +18,7 @@
 
 .hero-content {
   text-align: left;
-  max-width: 50%; 
+  max-width: 50%;
 }
 
 .hero-content h1 {
@@ -61,7 +61,12 @@
 }
 
 .hero-image {
-  max-width: 50%; 
+  max-width: 40%;
+  height: auto;
+  margin-left: 2rem;
+  margin-right: -2rem;
+  margin-top: 6rem;
+  margin-bottom: -1rem;
 }
 
 .hero-image img {

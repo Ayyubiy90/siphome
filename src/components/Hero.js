@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/components/Hero.css";
-import image from "../assets/image.png";
+import heroImage from "../assets/image.png";
 
 function Hero() {
   return (
@@ -25,7 +25,7 @@ function Hero() {
         </div>
       </div>
       <div className="hero-image">
-        <img src={image} alt="Smart Home" />
+        <img src={heroImage} alt="Hero" />
       </div>
     </section>
   );
