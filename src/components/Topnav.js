@@ -1,7 +1,5 @@
-// src/components/Topnav.js
-
 import React from "react";
-import "../styles/components/Topnav.css"; // Correct import path
+import "../styles/components/Topnav.css";
 
 function Topnav() {
   return (
