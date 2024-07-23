@@ -34,6 +34,28 @@
 .subtext {
   color: #ffffff;
   font-weight: 300;
-  font-size: 1rem; 
+  font-size: 1rem;
   margin-top: 1rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem; 
+  margin-top: 1rem;
+}
+
+.hero-button {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hero-button:hover {
+  background-color: #3acf6e;
+  border-color: #3acf6e;
 }
