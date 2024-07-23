@@ -36,11 +36,19 @@ function Topnav() {
           Get Started
         </a>
       </div>
-      <button
-        className={`menu-button ${menuOpen ? "close" : ""}`}
-        onClick={toggleMenu}>
-        {menuOpen ? "Close" : "Menu"}
-      </button>
+      {menuOpen && (
+        <div className="menu-header">
+          <h1>Siphome Menu</h1>
+          <button className="menu-button close" onClick={toggleMenu}>
+            Close
+          </button>
+        </div>
+      )}
+      {!menuOpen && (
+        <button className="menu-button" onClick={toggleMenu}>
+          Menu
+        </button>
+      )}
     </nav>
   );
 }

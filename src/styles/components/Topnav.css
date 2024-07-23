@@ -60,10 +60,10 @@
   background: none;
   border: 1px solid #ffffff;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.9rem; /* Reduced font size */
   cursor: pointer;
   border-radius: 8px;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.8rem; /* Reduced width */
 }
 
 .menu-button:hover {
@@ -77,18 +77,39 @@
   border-color: #fa4949;
 }
 
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.menu-header h1 {
+  color: #262b36;
+  font-weight: bold;
+  margin: 0;
+  font-size: 1rem; /* Reduced font size */
+}
+
+.menu-header .menu-button {
+  border: 1px solid #fa4949;
+  color: #fa4949;
+}
+
 @media (max-width: 768px) {
   .nav-links,
   .auth-links {
     display: none;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem; /* Reduced space between links */
     background: #ffffff;
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
     padding: 1rem;
+    box-sizing: border-box;
   }
 
   .nav-links.open,
@@ -114,14 +135,14 @@
     border-color: #fa4949;
   }
 
-  .topnav.open .nav-links a,
-  .topnav.open .auth-links a {
-    color: #606b86;
+  .topnav.open .nav-links {
+    display: flex;
   }
 
-  .topnav.open .nav-links a:hover,
-  .topnav.open .auth-links a:hover {
-    color: #2053d1;
+  .topnav.open .auth-links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem; /* Reduced space between buttons */
   }
 
   .topnav.open .auth-links .sign-in,
@@ -129,12 +150,33 @@
     color: #3acf6e;
     border: 1px solid #3acf6e;
     background: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.8rem; /* Reduced button size */
+    font-size: 0.8rem; /* Reduced font size */
   }
 
   .topnav.open .auth-links .sign-in:hover,
   .topnav.open .auth-links .get-started:hover {
     background-color: #3acf6e;
     color: #ffffff;
+  }
+
+  .topnav.open .menu-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .topnav.open .menu-header h1 {
+    font-size: 1rem;
+  }
+
+  .topnav.open .nav-links a,
+  .topnav.open .auth-links a {
+    color: #606b86;
+    font-size: 0.9rem; /* Reduced font size */
+  }
+
+  .topnav.open .nav-links a:hover,
+  .topnav.open .auth-links a:hover {
+    color: #2053d1;
   }
 }
