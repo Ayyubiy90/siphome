@@ -87,12 +87,17 @@
     max-width: 100%;
   }
 
+  .subtext {
+    font-size: 0.8rem; 
+  }
+
   .hero-buttons {
-    flex-direction: row; /* Keep buttons beside each other */
+    flex-direction: row; 
     justify-content: center;
+    gap: 3rem;
   }
 
   .hero-image {
-    display: none; /* Hide image on smaller screens */
+    display: none; 
   }
 }
