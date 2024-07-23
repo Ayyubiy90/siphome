@@ -2,16 +2,14 @@ import React, { useState } from "react";
 import "../styles/components/Topnav.css";
 
 function Topnav() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className={`topnav ${menuOpen ? "open" : ""}`}>
+    <nav className={`topnav ${isOpen ? "open" : ""}`}>
       <img src="/assets/logo.png" alt="Siphome Logo" className="logo" />
-      <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+      <ul className={`nav-links ${isOpen ? "hidden" : ""}`}>
         <li>
           <a href="#home">Home</a>
         </li>
@@ -28,7 +26,7 @@ function Topnav() {
           <a href="#faq">FAQ</a>
         </li>
       </ul>
-      <div className={`auth-links ${menuOpen ? "open" : ""}`}>
+      <div className={`auth-links ${isOpen ? "hidden" : ""}`}>
         <a href="#sign-in" className="sign-in">
           Sign In
         </a>
@@ -36,18 +34,35 @@ function Topnav() {
           Get Started
         </a>
       </div>
-      {menuOpen && (
-        <div className="menu-header">
-          <h1>Siphome Menu</h1>
-          <button className="menu-button close" onClick={toggleMenu}>
-            Close
-          </button>
+      <button
+        className={`menu-button ${isOpen ? "close" : ""}`}
+        onClick={toggleMenu}>
+        {isOpen ? "Close" : "Menu"}
+      </button>
+      {isOpen && (
+        <div className="menu-container">
+          <div className="menu-header">
+            <h1>Siphome Menu</h1>
+            <button className="menu-button close" onClick={toggleMenu}>
+              Close
+            </button>
+          </div>
+          <div className="menu-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div className="menu-auth-links">
+            <a href="#sign-in" className="sign-in">
+              Sign In
+            </a>
+            <a href="#get-started" className="get-started">
+              Get Started
+            </a>
+          </div>
         </div>
-      )}
-      {!menuOpen && (
-        <button className="menu-button" onClick={toggleMenu}>
-          Menu
-        </button>
       )}
     </nav>
   );
