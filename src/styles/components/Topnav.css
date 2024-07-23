@@ -8,6 +8,8 @@
   font-family: "Inter", sans-serif;
   color: #ffffff;
   background: none;
+  position: relative;
+  z-index: 1;
 }
 
 .logo {
@@ -128,7 +130,7 @@
 }
 
 .menu-links a {
-  color: #606B86;
+  color: #606b86;
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -139,9 +141,9 @@
 
 .menu-auth-links {
   display: flex;
-  gap: 5rem; 
+  gap: 5rem;
   margin-top: 1rem;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .menu-auth-links .sign-in,
@@ -149,7 +151,7 @@
   color: #3acf6e;
   border: 1px solid #3acf6e;
   background: none;
-  padding: 0.5rem 1rem; 
+  padding: 0.5rem 1rem;
   font-size: 0.8rem;
 }
 
