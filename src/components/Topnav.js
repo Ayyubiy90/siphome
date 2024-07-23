@@ -9,7 +9,7 @@ function Topnav() {
   };
 
   return (
-    <nav className="topnav">
+    <nav className={`topnav ${menuOpen ? "open" : ""}`}>
       <img src="/assets/logo.png" alt="Siphome Logo" className="logo" />
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li>
@@ -36,7 +36,9 @@ function Topnav() {
           Get Started
         </a>
       </div>
-      <button className="menu-button" onClick={toggleMenu}>
+      <button
+        className={`menu-button ${menuOpen ? "close" : ""}`}
+        onClick={toggleMenu}>
         {menuOpen ? "Close" : "Menu"}
       </button>
     </nav>
