@@ -7,7 +7,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   color: #ffffff;
   font-family: "Inter", sans-serif;
   text-align: center;
@@ -17,8 +17,23 @@
   margin-top: -6rem;
 }
 
+.hero-content {
+  text-align: left;
+}
+
 .hero-content h1 {
   font-size: 3rem;
   font-weight: bold;
   margin: 0;
+}
+
+.hero-content .highlight {
+  color: #3acb6e;
+}
+
+.subtext {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1rem; 
+  margin-top: 1rem;
 }
