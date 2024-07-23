@@ -7,7 +7,6 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   color: #ffffff;
   font-family: "Inter", sans-serif;
   text-align: center;
@@ -40,7 +39,7 @@
 
 .hero-buttons {
   display: flex;
-  gap: 1rem; 
+  gap: 1rem;
   margin-top: 1rem;
 }
 
@@ -56,6 +55,6 @@
 }
 
 .hero-button:hover {
-  background-color: #3acf6e;
-  border-color: #3acf6e;
+  background-color: #3acf6e !important;
+  border-color: #3acf6e !important;
 }
