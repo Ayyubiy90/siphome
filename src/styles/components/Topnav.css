@@ -18,7 +18,7 @@
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .nav-links li {
@@ -42,7 +42,7 @@
 
 .sign-in,
 .get-started {
-  border: 1px solid;
+  /* border: 1px solid; */
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-weight: bold;
