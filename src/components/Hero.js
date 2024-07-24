@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/components/Hero.css";
 import heroImage from "../assets/image.png";
 import dotsImage from "../assets/dots.png";
+import illustrationImage from "../assets/illustration.png";
 
 function Hero() {
   return (
@@ -35,12 +36,17 @@ function Hero() {
         <div className="features-content">
           <p>
             Every day your home faces countless potential threats. Every day you
-            face countless potential headaches. A small problem can become a
-            major disaster. Early warning signs exist but often you can't hear
-            or see them.
+            face countless potential <br /> headaches. A small problem can
+            become a major disaster. Early warning signs exist but often you{" "}
+            <br /> can't hear or see them.
           </p>
-          <div className="features-image">
-            <img src={dotsImage} alt="Dots" />
+          <div className="features-images">
+            <img src={dotsImage} alt="Dots" className="dots-image" />
+            <img
+              src={illustrationImage}
+              alt="Illustration"
+              className="illustration-image"
+            />
           </div>
         </div>
       </section>
