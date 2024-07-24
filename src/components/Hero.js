@@ -3,6 +3,10 @@ import "../styles/components/Hero.css";
 import heroImage from "../assets/image.png";
 import dotsImage from "../assets/dots.png";
 import illustrationImage from "../assets/illustration.png";
+import iconThreat from "../assets/ico-threat.png";
+import iconEfficiency from "../assets/ico-smart.png";
+import iconSupport from "../assets/ico-prevention.png";
+import iconSecurity from "../assets/ico-service.png";
 
 function Hero() {
   return (
@@ -52,14 +56,64 @@ function Hero() {
               className="illustration-image"
             />
 
-            <div className="features-header">
+            <div className="features-heading-container">
               <h2 className="features-heading">FEATURES</h2>
-              <h3 className="meet-siphome">Meet Siphome</h3>
-              <p className="meet-siphome-description">
+              <p className="meet-siphome">Meet Siphome</p>
+              <p className="meet-description">
                 The most comprehensive smart solution to home maintenance. All
-                it takes is a simple and affordable sensor installation
-                by one of our Siphome certified technicians.
+                it takes is a simple and affordable sensor installation by one
+                of our Siphome certified technicians.
               </p>
+
+              <div className="card">
+                <div className="card-item">
+                  <img
+                    src={iconThreat}
+                    alt="Automatic Threat Detection"
+                    className="card-icon"
+                  />
+                  <h3 className="card-title">Automatic Threat Detection</h3>
+                  <p className="card-description">
+                    Siphome reacts the moment your equipment fails, alerting you
+                    to the problem.
+                  </p>
+                </div>
+                <div className="card-item">
+                  <img
+                    src={iconEfficiency}
+                    alt="Efficiency"
+                    className="card-icon"
+                  />
+                  <h3 className="card-title">Efficiency</h3>
+                  <p className="card-description">
+                    Enjoy streamlined home management with our intuitive
+                    solutions.
+                  </p>
+                </div>
+                <div className="card-item">
+                  <img
+                    src={iconSupport}
+                    alt="24/7 Support"
+                    className="card-icon"
+                  />
+                  <h3 className="card-title">24/7 Support</h3>
+                  <p className="card-description">
+                    Get round-the-clock assistance from our dedicated support
+                    team.
+                  </p>
+                </div>
+                <div className="card-item">
+                  <img
+                    src={iconSecurity}
+                    alt="Enhanced Security"
+                    className="card-icon"
+                  />
+                  <h3 className="card-title">Enhanced Security</h3>
+                  <p className="card-description">
+                    Protect your home with our advanced security features.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -138,9 +138,44 @@
 .meet-siphome-description {
   color: #606b86;
   font-size: 0.875rem;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   margin-top: 1rem;
   padding-right: 15rem;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+  gap: 2rem; /* Adjust the gap between card items */
+  /* justify-content: center; */
+  max-width: 100%; /* Ensure it fits within the container */
+}
+
+.card-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  width: 200px; /* Adjust width as needed */
+  max-width: 100%; /* Ensure responsiveness */
+}
+
+.card-item img {
+  max-width: 40px; /* Adjust icon size */
+  height: auto;
+}
+
+.card-item h3 {
+  color: #262B36;
+  font-size: 1.1rem; /* Adjust size as needed */
+  margin-top: 1rem;
+}
+
+.card-item p {
+  color: #606B86;
+  font-size: 0.9rem; /* Adjust size as needed */
+  margin-top: 0.5rem;
 }
 
 /* Mobile responsiveness */
