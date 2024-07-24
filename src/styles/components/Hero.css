@@ -116,8 +116,22 @@
 .features-heading {
   color: #2053d1;
   font-size: 1rem; 
-  letter-spacing: 0.2em; 
+  letter-spacing: 0.5em;
+  margin-bottom: 0; 
+  margin-top: 0;
+}
+
+.features-header {
+  display: flex;
+  flex-direction: column;
   margin-left: 2rem;
+}
+
+.meet-siphome {
+  color: #262b36;
+  font-size: 2rem;
+  margin-top: 0rem;
+  font-weight: bold;
 }
 
 /* Mobile responsiveness */

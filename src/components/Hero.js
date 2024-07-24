@@ -13,13 +13,13 @@ function Hero() {
             Imagine your <br /> home smart enough <br />
             <span className="highlight">to take care</span> of itself.
           </h1>
-          
+
           <p className="subtext">
             Turn your home into a smart home today with a simple & <br />
             affordable upgrade. Discover the upgrade that automates <br />
             home maintenance.
           </p>
-          
+
           <div className="hero-buttons">
             <a href="#get-started" className="hero-button">
               Get Started
@@ -29,7 +29,7 @@ function Hero() {
             </a>
           </div>
         </div>
-        
+
         <div className="hero-image">
           <img src={heroImage} alt="Hero" />
         </div>
@@ -51,8 +51,11 @@ function Hero() {
               alt="Illustration"
               className="illustration-image"
             />
-            <h2 className="features-heading">FEATURES</h2>
-            {/* Additional elements will go here */}
+
+            <div className="features-header">
+              <h2 className="features-heading">FEATURES</h2>
+              <p className="meet-siphome">Meet Siphome</p>
+            </div>
           </div>
         </div>
       </section>
