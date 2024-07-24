@@ -101,3 +101,39 @@
     display: none;
   }
 }
+
+.features {
+  padding: 2rem;
+  background-color: #ffffff;
+  color: #606b86;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.features-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.features-content p {
+  max-width: 60%;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.features-image {
+  max-width: 100%;
+  text-align: right;
+  margin-top: -2rem;
+  margin-right: -1.5rem;
+}
+
+.features-image img {
+  width: auto;
+  height: auto;
+  max-height: 200px;
+}

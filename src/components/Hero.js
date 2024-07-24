@@ -1,33 +1,50 @@
 import React from "react";
 import "../styles/components/Hero.css";
 import heroImage from "../assets/image.png";
+import dotsImage from "../assets/dots.png";
 
 function Hero() {
   return (
-    <section className="hero">
-      <div className="hero-content">
-        <h1>
-          Imagine your <br /> home smart enough <br />
-          <span className="highlight">to take care</span> of itself.
-        </h1>
-        <p className="subtext">
-          Turn your home into a smart home today with a simple & <br />
-          affordable upgrade. Discover the upgrade that automates <br />
-          home maintenance.
-        </p>
-        <div className="hero-buttons">
-          <a href="#get-started" className="hero-button">
-            Get Started
-          </a>
-          <a href="#learn-more" className="hero-button">
-            Learn More
-          </a>
+    <>
+      <section className="hero">
+        <div className="hero-content">
+          <h1>
+            Imagine your <br /> home smart enough <br />
+            <span className="highlight">to take care</span> of itself.
+          </h1>
+          <p className="subtext">
+            Turn your home into a smart home today with a simple & <br />
+            affordable upgrade. Discover the upgrade that automates <br />
+            home maintenance.
+          </p>
+          <div className="hero-buttons">
+            <a href="#get-started" className="hero-button">
+              Get Started
+            </a>
+            <a href="#learn-more" className="hero-button">
+              Learn More
+            </a>
+          </div>
         </div>
-      </div>
-      <div className="hero-image">
-        <img src={heroImage} alt="Hero" />
-      </div>
-    </section>
+        <div className="hero-image">
+          <img src={heroImage} alt="Hero" />
+        </div>
+      </section>
+
+      <section className="features">
+        <div className="features-content">
+          <p>
+            Every day your home faces countless potential threats. Every day you
+            face countless potential headaches. A small problem can become a
+            major disaster. Early warning signs exist but often you can't hear
+            or see them.
+          </p>
+          <div className="features-image">
+            <img src={dotsImage} alt="Dots" />
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
 
