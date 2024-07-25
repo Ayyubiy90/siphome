@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import "/node_modules/swiper/swiper-bundle.min.css";
 
 .testimonial {
   background-color: #ecf0f7;
@@ -11,15 +12,70 @@
   color: #2053d1;
   letter-spacing: 0.5em;
   font-size: 1rem;
+  margin-bottom: 1rem;
   font-weight: bold;
 }
 
 .testimonial-subtitle {
   color: #262b36;
   font-weight: bold;
-  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
   margin-top: 0;
-  font-size: 3rem;
-  padding-right: 15rem;
-  padding-left: 15rem;
+  padding: 1rem;
+}
+
+.testimonial-swiper {
+  width: 100%;
+}
+
+.testimonial-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.testimonial-message {
+  color: #262b36;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-name {
+  color: #262b36;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-role {
+  color: #606b86;
+  font-size: 1rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2053d1;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ccc;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #2053d1;
 }
