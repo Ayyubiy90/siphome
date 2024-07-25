@@ -4,9 +4,9 @@ import heroImage from "../assets/image.png";
 import dotsImage from "../assets/dots.png";
 import illustrationImage from "../assets/illustration.png";
 import iconThreat from "../assets/ico-threat.png";
-import iconEfficiency from "../assets/ico-smart.png";
-import iconSupport from "../assets/ico-prevention.png";
-import iconSecurity from "../assets/ico-service.png";
+import iconSmart from "../assets/ico-smart.png";
+import iconPrevention from "../assets/ico-prevention.png";
+import iconService from "../assets/ico-service.png";
 
 function Hero() {
   return (
@@ -81,7 +81,7 @@ function Hero() {
 
                 <div className="card-item">
                   <img
-                    src={iconEfficiency}
+                    src={iconSmart}
                     alt="Smart Diagnostics"
                     className="card-icon"
                   />
@@ -94,7 +94,7 @@ function Hero() {
 
                 <div className="card-item">
                   <img
-                    src={iconSupport}
+                    src={iconPrevention}
                     alt="Disaster Prevention"
                     className="card-icon"
                   />
@@ -107,13 +107,14 @@ function Hero() {
 
                 <div className="card-item">
                   <img
-                    src={iconSecurity}
+                    src={iconService}
                     alt="24/7 Service"
                     className="card-icon"
                   />
                   <h3 className="card-title">24/7 Service</h3>
                   <p className="card-description">
-                    Siphome monitors your critical systems 24/7 so you can enjoy peace of mind.
+                    Siphome monitors your critical systems 24/7 so you can enjoy
+                    peace of mind.
                   </p>
                 </div>
               </div>
