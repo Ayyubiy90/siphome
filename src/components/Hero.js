@@ -78,39 +78,42 @@ function Hero() {
                     to the problem.
                   </p>
                 </div>
+
                 <div className="card-item">
                   <img
                     src={iconEfficiency}
-                    alt="Efficiency"
+                    alt="Smart Diagnostics"
                     className="card-icon"
                   />
-                  <h3 className="card-title">Efficiency</h3>
+                  <h3 className="card-title">Smart Diagnostics</h3>
                   <p className="card-description">
-                    Enjoy streamlined home management with our intuitive
-                    solutions.
+                    See exactly what is malfunctioning and compare your
+                    maintenance options on the same screen.
                   </p>
                 </div>
+
                 <div className="card-item">
                   <img
                     src={iconSupport}
-                    alt="24/7 Support"
+                    alt="Disaster Prevention"
                     className="card-icon"
                   />
-                  <h3 className="card-title">24/7 Support</h3>
+                  <h3 className="card-title">Disaster Prevention</h3>
                   <p className="card-description">
-                    Get round-the-clock assistance from our dedicated support
-                    team.
+                    Predictive analytics lets you see what needs maintenance
+                    before it fails.
                   </p>
                 </div>
+
                 <div className="card-item">
                   <img
                     src={iconSecurity}
-                    alt="Enhanced Security"
+                    alt="24/7 Service"
                     className="card-icon"
                   />
-                  <h3 className="card-title">Enhanced Security</h3>
+                  <h3 className="card-title">24/7 Service</h3>
                   <p className="card-description">
-                    Protect your home with our advanced security features.
+                    Siphome monitors your critical systems 24/7 so you can enjoy peace of mind.
                   </p>
                 </div>
               </div>
