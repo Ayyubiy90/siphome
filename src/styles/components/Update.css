@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 .update {
+  background-image: url("/src/assets/background-update.png");
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
@@ -8,6 +9,7 @@
   font-family: "Inter", sans-serif;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .update-content {
@@ -77,4 +79,59 @@
   font-size: 1rem;
   margin-top: 0.5rem;
   padding-right: 5rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .update {
+    background-image: url("/src/assets/background-update-mobile.png");
+    flex-direction: column;
+    align-items: center;
+    background-position: center bottom;
+  }
+
+  .update-content {
+    text-align: center;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .update-title {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+
+  .update-subtitle {
+    margin-left: 0;
+    font-size: 1.2rem;
+    padding-right: 0;
+  }
+
+  .update-image-container {
+    margin-left: 0;
+  }
+
+  .update-details {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .detail-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .detail-icon {
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .detail-title {
+    margin-top: 1rem;
+  }
+
+  .detail-description {
+    padding-right: 0;
+  }
 }

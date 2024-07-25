@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/components/Update.css";
-import backgroundUpdate from "../assets/background-update.png";
+// import backgroundUpdate from "../assets/background-update.png";
 import updateImage from "../assets/update1.png";
 import monitorIcon from "../assets/icon-monitor.png";
 import maintenanceIcon from "../assets/icon-maintenance.png";
@@ -10,8 +10,7 @@ import replaceIcon from "../assets/icon-replace.png";
 function Update() {
   return (
     <section
-      className="update"
-      style={{ backgroundImage: `url(${backgroundUpdate})` }}>
+      className="update">
       <div className="update-content">
         <h2 className="update-title">UPDATE</h2>
         <p className="update-subtitle">It starts with an upgrade</p>
