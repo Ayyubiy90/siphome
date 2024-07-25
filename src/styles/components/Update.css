@@ -1,36 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 .update {
-  background-image: url("/src/assets/background-update.png");
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  height: 100vh;
   color: #ffffff;
   font-family: "Inter", sans-serif;
 }
 
 .update-content {
   text-align: left;
-  margin-top: -30rem;
-  margin-left: 2rem;
-  max-width: 60%;
+  max-width: 50%;
+  margin-left: 0;
 }
 
 .update-title {
   color: #2053d1;
   letter-spacing: 0.5em;
   font-size: 1rem;
-  margin: 0;
+  margin-left: 5rem;
 }
 
 .update-subtitle {
   color: #262b36;
-  font-size: 2.5rem;
   font-weight: bold;
+  font-size: 2rem;
   margin-top: 1rem;
+  margin-left: 5rem;
   padding-right: 20rem;
+}
+
+.update-image-container {
+  margin-top: 2rem;
+  margin-left: -2rem;
+}
+
+.update-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
