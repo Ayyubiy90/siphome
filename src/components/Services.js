@@ -1,5 +1,4 @@
-import React from "react";
-import "../styles/components/Services.css";
+import React, { useState, useEffect } from "react";
 import illustrationServices from "../assets/services-illustration.png";
 import iconMobileCommandManagement from "../assets/icon-mobile-command-management.png";
 import iconEquipmentOptimizer from "../assets/icon-equipment-optimizer.png";
@@ -10,10 +9,24 @@ import iconSmartDiagnostics from "../assets/icon-smart-diagnostics.png";
 import iconVitalEquipmentScan from "../assets/icon-vital-equipment-scan.png";
 import iconSmartAlerts from "../assets/icon-smart-alerts.png";
 import iconPreventativeMaintenance from "../assets/icon-preventative-maintenance.png";
+
+import "../styles/components/Services.css";
+import "/node_modules/swiper/swiper-bundle.min.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "/node_modules/swiper/swiper.css";
+import { Autoplay, Pagination } from "swiper/modules";
 
 const Service = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const services = [
     { icon: iconMobileCommandManagement, text: "Mobile Command Management" },
     { icon: iconEquipmentOptimizer, text: "Equipment Optimizer" },
@@ -42,30 +55,48 @@ const Service = () => {
           alt="Illustration of services"
           className="service-image"
         />
-        <div className="service-icons-container">
-          {services.map((service, index) => (
-            <div className="service-icon-box" key={index}>
-              <img src={service.icon} alt="Icon" className="service-icon" />
-              <p className="service-icon-text">{service.text}</p>
-            </div>
-          ))}
-        </div>
 
-        <Swiper
-          spaceBetween={10}
-          slidesPerView={1.2}
-          centeredSlides={true}
-          loop={true}
-          className="service-swiper">
-          {services.map((service, index) => (
-            <SwiperSlide key={index}>
-              <div className="service-icon-box">
+        {!isMobile && (
+          <div className="service-icons-container">
+            {services.map((service, index) => (
+              <div className="service-icon-box" key={index}>
                 <img src={service.icon} alt="Icon" className="service-icon" />
                 <p className="service-icon-text">{service.text}</p>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            ))}
+          </div>
+        )}
+
+        {isMobile && (
+          <>
+            <Swiper
+              spaceBetween={10}
+              slidesPerView={1.2}
+              centeredSlides={true}
+              loop={true}
+              autoplay={{ delay: 3000 }}
+              pagination={{
+                clickable: true,
+                el: ".swiper-custom-pagination",
+              }}
+              modules={[Autoplay, Pagination]}
+              className="service-swiper">
+              {services.map((service, index) => (
+                <SwiperSlide key={index}>
+                  <div className="service-icon-box">
+                    <img
+                      src={service.icon}
+                      alt="Icon"
+                      className="service-icon"
+                    />
+                    <p className="service-icon-text">{service.text}</p>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <div className="swiper-custom-pagination"></div>
+          </>
+        )}
       </div>
     </section>
   );
