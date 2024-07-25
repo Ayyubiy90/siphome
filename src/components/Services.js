@@ -10,6 +10,8 @@ import iconSmartDiagnostics from "../assets/icon-smart-diagnostics.png";
 import iconVitalEquipmentScan from "../assets/icon-vital-equipment-scan.png";
 import iconSmartAlerts from "../assets/icon-smart-alerts.png";
 import iconPreventativeMaintenance from "../assets/icon-preventative-maintenance.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "/node_modules/swiper/swiper.css";
 
 const Service = () => {
   const services = [
@@ -48,6 +50,22 @@ const Service = () => {
             </div>
           ))}
         </div>
+
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={1.2}
+          centeredSlides={true}
+          loop={true}
+          className="service-swiper">
+          {services.map((service, index) => (
+            <SwiperSlide key={index}>
+              <div className="service-icon-box">
+                <img src={service.icon} alt="Icon" className="service-icon" />
+                <p className="service-icon-text">{service.text}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
