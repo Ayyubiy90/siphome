@@ -15,14 +15,23 @@
   font-weight: 700;
 }
 
-.service-heading {
+.service-subtitle {
   color: #262b36;
   font-weight: bold;
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  margin-top: 0;
 }
 
 .service-description {
   color: #606b86;
   font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.service-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 2rem;
 }
