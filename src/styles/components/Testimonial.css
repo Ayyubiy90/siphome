@@ -7,44 +7,19 @@
   font-family: "Inter", sans-serif;
 }
 
-.testimonial-heading {
+.testimonial-title {
   color: #2053d1;
-  font-weight: bold;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.5em;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
-.testimonial-subheading {
+.testimonial-subtitle {
   color: #262b36;
   font-weight: bold;
-  padding: 0.5rem 0;
-  font-size: 1.25rem;
-}
-
-.testimonial-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.testimonial-card {
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
-  padding: 2rem;
-  width: 100%;
-  max-width: 600px;
-}
-
-.testimonial-text {
-  color: #262b36;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.testimonial-author {
-  color: #2053d1;
-  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  font-size: 3rem;
+  padding-right: 15rem;
+  padding-left: 15rem;
 }
