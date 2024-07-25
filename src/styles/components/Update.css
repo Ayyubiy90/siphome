@@ -6,6 +6,8 @@
   padding: 4rem 2rem;
   color: #ffffff;
   font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-between;
 }
 
 .update-content {
@@ -39,4 +41,40 @@
   width: 100%;
   height: auto;
   display: block;
+}
+
+.update-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 40%;
+}
+
+.detail-item {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.detail-icon {
+  width: 50px;
+  height: auto;
+  margin-right: 1.2rem;
+  margin-top: -5rem;
+}
+
+.detail-title {
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.detail-description {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  padding-right: 5rem;
 }
