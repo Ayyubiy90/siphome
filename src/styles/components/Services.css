@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.service {
+  background-color: #ecf0f7;
+  text-align: center;
+  padding: 4rem 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.service-title {
+  color: #2053d1;
+  letter-spacing: 0.5em;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.service-heading {
+  color: #262b36;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.service-description {
+  color: #606b86;
+  font-size: 1rem;
+}
