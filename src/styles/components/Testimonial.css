@@ -43,28 +43,36 @@
 .testimonial-card {
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem; /* Reduced border-radius for more rectangular shape */
+  border-radius: 1rem;
   padding: 1.5rem;
   text-align: left;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Change to row layout */
+  align-items: center; /* Vertically center items */
   height: 100%;
+}
+
+.testimonial-content {
+  flex: 1; /* Take up remaining space */
+  padding-right: 1.5rem; /* Add some space between content and photo */
+}
+
+.testimonial-photo-container {
+  flex-shrink: 0; /* Prevent photo from shrinking */
 }
 
 .testimonial-photo {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  margin-bottom: 1rem;
-  align-self: center; /* Center the photo */
+  margin-bottom: 0; /* Remove bottom margin */
 }
 
 .testimonial-message {
   color: #262b36;
   font-size: 1rem;
-  margin-bottom: 1.5rem;
-  flex-grow: 1; /* Allow message to take up remaining space */
+  margin-bottom: 1rem;
 }
 
 .testimonial-name {

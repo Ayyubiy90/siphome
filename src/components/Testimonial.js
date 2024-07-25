@@ -58,14 +58,18 @@ const Testimonial = () => {
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index} className="testimonial-slide">
             <div className="testimonial-card">
-              <img
-                src={testimonial.photo}
-                alt={`Testimonial from ${testimonial.name}`}
-                className="testimonial-photo"
-              />
-              <p className="testimonial-message">{testimonial.message}</p>
-              <p className="testimonial-name">{testimonial.name}</p>
-              <p className="testimonial-role">{testimonial.role}</p>
+              <div className="testimonial-content">
+                <p className="testimonial-message">{testimonial.message}</p>
+                <p className="testimonial-name">{testimonial.name}</p>
+                <p className="testimonial-role">{testimonial.role}</p>
+              </div>
+              <div className="testimonial-photo-container">
+                <img
+                  src={testimonial.photo}
+                  alt={`Testimonial from ${testimonial.name}`}
+                  className="testimonial-photo"
+                />
+              </div>
             </div>
           </SwiperSlide>
         ))}
