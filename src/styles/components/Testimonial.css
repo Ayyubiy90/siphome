@@ -31,7 +31,7 @@
 }
 
 .testimonial-slide {
-  width: 500px; /* Increased width */
+  width: 500px;
   opacity: 0.4;
   transition: opacity 0.3s;
 }
@@ -52,20 +52,20 @@
 }
 
 .testimonial-content {
-  padding-right: 100px; /* Make space for the photo */
+  padding-right: 100px;
 }
 
 .testimonial-photo-container {
   position: absolute;
-  top: -2.2rem; /* Align with the top padding of the card */
-  right: -1rem; /* Align with the right padding of the card */
+  top: -2.2rem;
+  right: -1rem;
 }
 
 .testimonial-photo {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  object-fit: cover; /* Ensure the image covers the area without distortion */
+  object-fit: cover;
 }
 
 .testimonial-message {
@@ -86,7 +86,7 @@
 }
 
 .testimonial-slide {
-  width: 500px; /* Adjust as needed */
+  width: 500px;
   opacity: 0.4;
   transition: opacity 0.3s;
 }
@@ -97,17 +97,17 @@
 
 @media (max-width: 768px) {
   .testimonial-slide {
-    width: 300px; /* Adjusted for mobile */
+    width: 300px;
   }
 
   .testimonial-content {
-    padding-right: 0; /* Remove right padding on mobile */
-    padding-top: 100px; /* Add top padding to make space for the photo */
+    padding-right: 0;
+    padding-top: 100px;
   }
 
   .testimonial-photo-container {
     top: 1rem;
     right: 50%;
-    transform: translateX(50%); /* Center the photo horizontally */
+    transform: translateX(50%);
   }
 }
