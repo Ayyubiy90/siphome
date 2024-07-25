@@ -3,6 +3,7 @@ import Topnav from "./components/Topnav";
 import Hero from "./components/Hero";
 import Update from "./components/Update";
 import Services from "./components/Services";
+import Testimonial from "./components/Testimonial";
 import "./styles/App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Update />
       <Services />
+      < Testimonial />
       {/* Other components will go here */}
     </div>
   );
