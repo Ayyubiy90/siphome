@@ -39,15 +39,18 @@ const Testimonial = () => {
     <section className="testimonial">
       <h2 className="testimonial-title">TESTIMONIALS</h2>
       <p className="testimonial-subtitle">
-        Let’s see what people say about Siphome
+        Let's see what people say about Siphome
       </p>
 
       <Swiper
-        spaceBetween={20}
-        slidesPerView={1}
+        spaceBetween={30}
+        slidesPerView="auto"
         centeredSlides={true}
         loop={true}
-        autoplay={{ delay: 5000 }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         navigation
         pagination={{ clickable: true }}
         modules={[Autoplay, Navigation, Pagination]}
