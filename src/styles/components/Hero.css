@@ -211,13 +211,50 @@
     display: none;
   }
 
+  .features {
+    text-align: center;
+  }
+
+  .features-content {
+    text-align: center;
+  }
+
+  .features-text {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
   .features-details {
     flex-direction: column;
     align-items: center;
   }
 
-  .features-heading {
-    margin-left: 0;
-    margin-top: 1rem;
+  .dots-image {
+    display: none;
+  }
+
+  .illustration-image {
+    margin: 2rem 0;
+    max-width: 80%;
+  }
+
+  .features-heading-container {
+    margin: 0;
+    text-align: center;
+  }
+
+  .meet-description {
+    padding-right: 0;
+    margin: 0 auto;
+  }
+
+  .card {
+    justify-content: center;
+  }
+
+  .card-item {
+    text-align: center;
+    margin: 1rem 0;
   }
 }
