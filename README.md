@@ -54,7 +54,7 @@ Check out the live project here: [Siphome Live Project](https://siphome-chinxas-
 
 ## Preview Video 🎥
 
-![Video Preview](../../Videos/Captures/React%20App%20-%20Google%20Chrome%202024-07-26%2017-29-28.mp4)
+![Video Preview](/preview/React%20App%20-%20Google%20Chrome%202024-07-26%2017-29-28.mp4)
 
 
 ## Contributing 🤝
