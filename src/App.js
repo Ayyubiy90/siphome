@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Update from "./components/Update";
 import Services from "./components/Services";
 import Testimonial from "./components/Testimonial";
+import Contact from "./components/Contact";
 import "./styles/App.css";
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <Hero />
       <Update />
       <Services />
-      < Testimonial />
+      <Testimonial />
+      <Contact />
       {/* Other components will go here */}
     </div>
   );
