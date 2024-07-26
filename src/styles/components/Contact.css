@@ -95,3 +95,45 @@
   background-color: #3acf6e;
   color: #ffffff;
 }
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .contact-title,
+  .contact-subtitle {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .contact-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem 0;
+  }
+
+  .form-group label {
+    text-align: center;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .contact-submit {
+    display: block;
+    margin: 0 auto;
+  }
+}
