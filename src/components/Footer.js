@@ -73,18 +73,20 @@ const Footer = () => {
 
         <div className="footer-column">
           <h3 className="footer-heading">Stay Connected</h3>
-          <a href="#facebook" className="footer-link">
-            <FaFacebook className="footer-icon" /> Facebook
-          </a>
-          <a href="#twitter" className="footer-link">
-            <FaTwitter className="footer-icon" /> X
-          </a>
-          <a href="#instagram" className="footer-link">
-            <FaInstagram className="footer-icon" /> Instagram
-          </a>
-          <a href="#email" className="footer-link">
-            <FaEnvelope className="footer-icon" /> Email
-          </a>
+          <div className="social-media-container">
+            <a href="#facebook" className="footer-link">
+              <FaFacebook className="footer-icon" /> Facebook
+            </a>
+            <a href="#twitter" className="footer-link">
+              <FaTwitter className="footer-icon" /> X
+            </a>
+            <a href="#instagram" className="footer-link">
+              <FaInstagram className="footer-icon" /> Instagram
+            </a>
+            <a href="#email" className="footer-link">
+              <FaEnvelope className="footer-icon" /> Email
+            </a>
+          </div>
         </div>
       </div>
 
