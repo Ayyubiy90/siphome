@@ -54,7 +54,7 @@ Check out the live project here: [Siphome Live Project](https://siphome-chinxas-
 
 ## Preview Video 🎥
 
-[![Siphome Preview](./src/assets/thumbnail/Screenshot%20(20).png)](https://vimeo.com/990678464)
+https://vimeo.com/990678464
 
 
 ## Contributing 🤝
