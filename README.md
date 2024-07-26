@@ -52,9 +52,14 @@ Siphome Smart Home System integrates the latest technology to bring intelligence
 
 Check out the live project here: [Siphome Live Project](https://siphome-chinxas-projects.vercel.app/)
 
-## Preview Video 🎥
+## Preview 📸
 
-![Video Preview](https://vimeo.com/990678464)
+<img src="../../Pictures/Screenshots/Screenshot%20(20).png" alt="Preview" width="300"/>
+<img src="../../Pictures/Screenshots/Screenshot%20(21).png" alt="Preview" width="300"/>
+<img src="../../Pictures/Screenshots/Screenshot%20(22).png" alt="Preview" width="300"/>
+<img src="../../Pictures/Screenshots/Screenshot%20(23).png" alt="Preview" width="300"/>
+<img src="../../Pictures/Screenshots/Screenshot%20(24).png" alt="Preview" width="300"/>
+<img src="../../Pictures/Screenshots/Screenshot%20(25).png" alt="Preview" width="300"/>
 
 
 ## Contributing 🤝
