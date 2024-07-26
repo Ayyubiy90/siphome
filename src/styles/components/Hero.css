@@ -4,15 +4,18 @@
   background-image: url("/src/assets/background.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #ffffff;
   font-family: "Inter", sans-serif;
-  padding: 0 2rem;
+  padding: 6rem 2rem 2rem;
   position: relative;
   margin-top: -6rem;
+  overflow: hidden;
 }
 
 .hero-buttons {
@@ -23,6 +26,8 @@
 .hero-content {
   text-align: left;
   max-width: 50%;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content h1 {
@@ -70,8 +75,18 @@
   height: auto;
   margin-left: 2rem;
   margin-right: -2rem;
-  margin-top: 6rem;
-  margin-bottom: -1rem;
+  position: relative; 
+  z-index: 1; 
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
 .hero-image img {
@@ -190,11 +205,15 @@
 @media (max-width: 768px) {
   .hero {
     background-image: url("/src/assets/hero-background-mobile.png");
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    min-height: 80vh;
-    padding: 2rem 1rem;
+    padding: 6rem 1rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-content,
+  .hero-image {
+    max-width: 100%;
+    margin: 1rem 0;
   }
 
   .hero-content {
