@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Inter", sans-serif;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-title {
+  color: #2053d1;
+  letter-spacing: 0.5em;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+  color: #262b36;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-illustration {
+  width: 100%;
+  max-width: 400px;
+}
