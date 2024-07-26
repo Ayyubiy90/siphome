@@ -25,6 +25,7 @@ const Footer = () => {
           <strong>E:</strong> siphome@gmail.com
         </p>
       </div>
+
       <div className="footer-right">
         <div className="footer-column">
           <h3 className="footer-heading">Navigation</h3>
@@ -47,6 +48,7 @@ const Footer = () => {
             Idea Exchange
           </a>
         </div>
+        
         <div className="footer-column">
           <h3 className="footer-heading">About</h3>
           <a href="#contact-us" className="footer-link">
@@ -62,6 +64,7 @@ const Footer = () => {
             FAQ
           </a>
         </div>
+        
         <div className="footer-column">
           <h3 className="footer-heading">Stay Connected</h3>
           <a href="#facebook" className="footer-link">
