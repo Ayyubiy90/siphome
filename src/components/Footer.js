@@ -1,7 +1,13 @@
 import React from "react";
 import "../styles/components/Footer.css";
 import footerLogo from "../assets/footer-logo.png";
-import { FaFacebook, FaTwitter, FaInstagram, FaEnvelope } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaEnvelope,
+  FaGithub,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -48,7 +54,7 @@ const Footer = () => {
             Idea Exchange
           </a>
         </div>
-        
+
         <div className="footer-column">
           <h3 className="footer-heading">About</h3>
           <a href="#contact-us" className="footer-link">
@@ -64,7 +70,7 @@ const Footer = () => {
             FAQ
           </a>
         </div>
-        
+
         <div className="footer-column">
           <h3 className="footer-heading">Stay Connected</h3>
           <a href="#facebook" className="footer-link">
@@ -80,6 +86,19 @@ const Footer = () => {
             <FaEnvelope className="footer-icon" /> Email
           </a>
         </div>
+      </div>
+
+      <div className="footer-bottom">
+        <p className="footer-copyright">
+          <span>Copyright &copy; 2024 AYB </span>
+          <a
+            href="https://github.com/Ayyubiy90"
+            target="_blank"
+            rel="noopener noreferrer">
+            <FaGithub className="footer-icon-github" />
+          </a>
+          <span> Siphome Smart home LLC.</span>
+        </p>
       </div>
     </footer>
   );

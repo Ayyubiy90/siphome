@@ -2,11 +2,14 @@
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: #ffffff;
   padding: 2rem;
   font-family: "Inter", sans-serif;
   margin-top: 5rem;
+  position: relative;
+  color: #262b36;
 }
 
 .footer-left {
@@ -21,7 +24,6 @@
 }
 
 .footer-text {
-  color: #262b36;
   line-height: 1.5;
 }
 
@@ -39,13 +41,12 @@
 }
 
 .footer-heading {
-  color: #262b36;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .footer-link {
-  color: #606b86;
+  color: #262b36;
   font-weight: light;
   text-decoration: none;
   margin-bottom: 0.5rem;
@@ -57,4 +58,59 @@
 
 .footer-icon {
   margin-right: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-link:hover .footer-icon {
+  transform: rotate(360deg);
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon-github {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  margin-bottom: -0.1rem;
+  color: #262b36;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-icon-github:hover {
+  transform: rotate(360deg);
+  color: #2053d1;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    max-width: 100%;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .footer-right {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    margin-bottom: 1rem;
+  }
 }
