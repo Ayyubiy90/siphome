@@ -1,38 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-.contact-section {
-  padding: 4rem 2rem;
+.contact {
   background-color: #ffffff;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
   font-family: "Inter", sans-serif;
 }
 
 .contact-content {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
-  margin-left: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.contact-info {
+  flex: 1;
+  padding-right: 2rem;
+  margin-left: 1rem;
 }
 
 .contact-title {
   color: #2053d1;
-  letter-spacing: 1em;
+  letter-spacing: 0.5em;
   font-size: 1rem;
-  font-weight: bold;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: left;
 }
 
 .contact-subtitle {
   color: #262b36;
   font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
   text-align: left;
-  font-size: 3.5rem;
-  margin-bottom: 2.5rem;
-  margin-right: 40rem;
-  margin-top: 0.3rem;
+  padding-right: 10rem;
 }
 
-.contact-illustration {
-  width: 100%;
+.contact-image {
+  width: 70%;
   max-width: 400px;
+  height: auto;
+  margin-top: 0;
+  margin-left: -10rem;
+}
+
+.contact-form {
+  flex: 1;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  color: #262b36;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 80%;
+  margin: 0;
+  padding: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.contact-submit {
+  background-color: #ecf0f7;
+  color: #3acf6e;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-submit:hover {
+  background-color: #3acf6e;
+  color: #ffffff;
 }
