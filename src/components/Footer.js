@@ -78,7 +78,7 @@ const Footer = () => {
               <FaFacebook className="footer-icon" /> Facebook
             </a>
             <a href="#twitter" className="footer-link">
-              <FaTwitter className="footer-icon" /> X
+              <FaTwitter className="footer-icon" /> Twitter
             </a>
             <a href="#instagram" className="footer-link">
               <FaInstagram className="footer-icon" /> Instagram
