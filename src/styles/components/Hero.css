@@ -12,7 +12,6 @@
   font-family: "Inter", sans-serif;
   padding: 0 2rem;
   position: relative;
-  /* z-index: -1; */
   margin-top: -6rem;
 }
 
@@ -101,8 +100,6 @@
 
 .features-details {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: space-between; */
   margin-top: 3rem;
 }
 
@@ -120,7 +117,6 @@
   max-width: 43%;
   width: 30rem;
   height: 21rem;
-  /* max-height: 30%; */
 }
 
 .features-heading-container {
@@ -166,7 +162,6 @@
 
 .card-item {
   background-color: #ffffff;
-  /* border: 1px solid #e0e0e0; */
   border-radius: 8px;
   padding: 1rem;
   width: 203px;
@@ -194,8 +189,12 @@
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column;
-    justify-content: center;
+    background-image: url("/src/assets/hero-background-mobile.png");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    min-height: 80vh;
+    padding: 2rem 1rem;
   }
 
   .hero-content {
