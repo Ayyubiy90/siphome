@@ -48,6 +48,15 @@ Siphome Smart Home System integrates the latest technology to bring intelligence
 2. Explore the various features and functionalities of the Siphome Smart Home System.
 3. Customize settings to suit your needs.
 
+## Project URL 🌐
+
+Check out the live project here: [Siphome Live Project](https://siphome-chinxas-projects.vercel.app/)
+
+## Preview Video 🎥
+
+[![Siphome Preview](./src/assets/thumbnail/Screenshot%20(20).png)](https://vimeo.com/990678464)
+
+
 ## Contributing 🤝
 
 We welcome contributions from the community! To contribute:
@@ -70,3 +79,10 @@ We welcome contributions from the community! To contribute:
 ## License 📜
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Thank you for checking out Siphome!
+If you have any questions or feedback, feel free to [contact us](mailto:abdullahabdurazaq10@gmail.com).
+
+Happy Smart Living! 🏠
