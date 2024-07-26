@@ -5,6 +5,7 @@ import Update from "./components/Update";
 import Services from "./components/Services";
 import Testimonial from "./components/Testimonial";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import "./styles/App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <Testimonial />
       <Contact />
+      <Footer />
       {/* Other components will go here */}
     </div>
   );
