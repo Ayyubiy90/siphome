@@ -1,29 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 .footer {
+  display: flex;
+  justify-content: space-between;
   background-color: #ffffff;
   padding: 2rem;
-  display: flex;
-  justify-content: flex-start;
-  /* align-items: flex-start; */
   font-family: "Inter", sans-serif;
 }
 
-.footer-content {
-  text-align: left;
+.footer-left {
+  max-width: 40%;
 }
 
 .footer-logo {
-  max-width: 150px;
+  width: 150px;
   margin-bottom: 1rem;
 }
 
 .footer-text {
   color: #262b36;
-  font-size: 1rem;
   line-height: 1.5;
 }
 
-.footer-text strong {
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-heading {
+  color: #262b36;
   font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  color: #606b86;
+  font-weight: light;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-link:hover {
+  color: #2053d1;
+}
+
+.footer-icon {
+  margin-right: 0.5rem;
 }
