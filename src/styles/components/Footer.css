@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.footer {
+  background-color: #ffffff;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: flex-start; */
+  font-family: "Inter", sans-serif;
+}
+
+.footer-content {
+  text-align: left;
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  color: #262b36;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer-text strong {
+  font-weight: bold;
+}
