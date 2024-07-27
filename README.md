@@ -54,9 +54,9 @@ Check out the live project here: [Siphome Live Project](https://siphome-chinxas-
 
 ## Preview 📸
 
-<img src="./src/assets/preview/Screenshot (20).png" alt="Preview" width="300"/> || <img src="./src/assets/preview/Screenshot (21).png" alt="Preview" width="300"/>
-<img src="./src/assets/preview/Screenshot (22).png" alt="Preview" width="300"/> || <img src="./src/assets/preview/Screenshot (23).png" alt="Preview" width="300"/>
-<img src="./src/assets/preview/Screenshot (24).png" alt="Preview" width="300"/> || <img src="./src/assets/preview/Screenshot (25).png" alt="Preview" width="300"/>
+<img src="./src/assets/preview/Screenshot (20).png" alt="Preview" width="300"/>              <img src="./src/assets/preview/Screenshot (21).png" alt="Preview" width="300"/>
+<img src="./src/assets/preview/Screenshot (22).png" alt="Preview" width="300"/>              <img src="./src/assets/preview/Screenshot (23).png" alt="Preview" width="300"/>
+<img src="./src/assets/preview/Screenshot (24).png" alt="Preview" width="300"/>              <img src="./src/assets/preview/Screenshot (25).png" alt="Preview" width="300"/>
 
 
 ## Contributing 🤝
