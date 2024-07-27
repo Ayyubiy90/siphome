@@ -95,6 +95,18 @@
   opacity: 1;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2053d1;
+  width: 5px;
+  height: 40px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 24px;
+}
+
 @media (max-width: 768px) {
   .testimonial-slide {
     width: 300px;
@@ -110,5 +122,18 @@
     top: -2rem;
     right: 50%;
     transform: translateX(50%);
+  }
+
+  .swiper-button-next {
+    right: 0.578rem;
+  }
+
+  .swiper-button-prev {
+    left: 0.578rem;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 18px;
   }
 }
